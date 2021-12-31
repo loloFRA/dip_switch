@@ -7,9 +7,9 @@ body {
 	margin:auto;
 	left:0;top:0;right:0;bottom:0;
 	width:300px;
-	height:250px;
-	border-radius:10px;
-	background-image: linear-gradient( white, teal);
+	height:500px;
+	border-radius:5px;
+	background-image: linear-gradient(white, #5DADE2,#5DADE2, #2471A3);
 	overflow:hidden;
 	box-shadow:inset 0 0 5px white, 0 0 2px black, 3px 3px 5px black;
 	color:white;
@@ -17,19 +17,67 @@ body {
 
 .title{
 	position:absolute;
-	top:20px;
+	top:25px;
 	width:100%;
 	font-size:1.5em;
 	font-weight:800;
 	text-align:center;
 	color:black;
-	font-family: 'Lilita One', cursive;
-	text-decoration:underline;
+    font-family: 'Martel', serif;
 }
-
+#urmet{
+    position: absolute;
+    top: 110px;
+    width:100%;
+    text-align: center;
+    color:black;
+    font-weight: 900;
+    font-family: 'Martel', serif;
+}
+#comelit{
+    position: absolute;
+    top: 270px;
+    width:100%;
+    text-align: center;
+    color:black;
+    font-weight: 900;
+    font-family: 'Martel', serif;
+}
+#hr0{
+    position: absolute;
+    width:100%;
+    top:80px;    
+    background-color:white;
+    height: 2px;
+    border: 1px solid silver;
+}
+#hr1{
+    position: absolute;
+    width:100%;
+    top:240px;
+    background-color:white;
+    height: 1px;
+    border: 1px solid silver;
+}
+#hr2{
+    position: absolute;
+    width:100%;
+    top:400px;
+    background-color:white;
+    height: 1px;
+    border: 1px solid silver;
+}
 .box{
 	position:absolute;
-	top:80px;
+	top:150px;
+	left:75px;
+	border:1px solid black;
+	border-radius:5px;
+	background-color:red;
+}
+.box1{
+	position:absolute;
+	top:310px;
 	left:75px;
 	border:1px solid black;
 	border-radius:5px;
@@ -69,17 +117,28 @@ body {
 	background-color:black;
 	transition:0.5s;
 }
-
-#input{
-	position:absolute;
-	top:200px;
-	width:150px;
-	left:75px;
-	text-align:center;
+.btn1{
+	margin-top:21px;
+	width:12px;
+	height:12px;
+	background-color:black;
+	transition:0.5s;
 }
-
-
-
-
-
-
+#cont_input{
+    position:absolute;
+    width:100%;
+    height:30px;
+    top:440px;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#input{
+	width:70px;
+    height:30px;
+    font-size: 1.5em;
+	text-align:center;
+    border-radius: 12px;
+    border: 1.5px solid black;
+}

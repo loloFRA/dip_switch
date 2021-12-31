@@ -23,9 +23,9 @@ const codification = () => {
 	
 	dom.lastValidInput = intInput;
 	$(".btn").each(function(index){
-			intToBinary(input)[index]=="0"?$(this).css('margin-top',21):$(this).css('margin-top',3);
+		intToBinary(input)[index]=="0"?$(this).css('margin-top',21):$(this).css('margin-top',3);
 	});
-    $(".btn1").each(function(index){
+    	$(".btn1").each(function(index){
 		intToBinary(input).split('').reverse().join('')[index]=="0"?$(this).css('margin-top',21):$(this).css('margin-top',3);
 	});	
 };

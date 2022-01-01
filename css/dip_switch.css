@@ -1,8 +1,7 @@
 body {
 	background-color:#414343;
 }
-
-.cont{
+#cont{
 	position:absolute;
 	margin:auto;
 	left:0;top:0;right:0;bottom:0;
@@ -13,11 +12,60 @@ body {
 	overflow:hidden;
 	box-shadow:inset 0 0 5px white, 0 0 2px black, 3px 3px 5px black;
 	color:white;
+    	z-index:1;
 }
-
-.title{
+#hr_tittle{
+    position: absolute;
+    width:100%;
+    top:65px;    
+    background-color:white;
+    height: 2px;
+}
+#search_by_dip{
+    position:absolute;
+    width: 100%;
+    top:95px;
+    color: black;
+    text-align: center;
+    font-family: 'Martel', serif;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+#search{
+    width: 60px;
+    height:60px;
+    border-radius:5px;
+    background-color: #23DC3D;
+    font-weight: 800;
+    color:black;
+    padding:2px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-left:25px;
+    font-size: 0.8em;
+    border:1px solid black;
+    box-shadow: 1px 1px 2px  black;
+}
+.fa-search{
+    margin-left: 5px;
+}
+#container_box_by_dip{
+    position:absolute;
+    display: none;
+	margin:auto;
+	left:0;top:0;right:0;bottom:0;
+	width:300px;
+	height:500px;
+	border-radius:5px;
+	background-image: linear-gradient(white, #5DADE2,#5DADE2, #2471A3);
+	overflow:hidden;
+	box-shadow: 0 0 2px black, 3px 3px 5px black;
+	color:white;
+    z-index:2;
+}
+#title{
 	position:absolute;
-	top:25px;
+	top:20px;
 	width:100%;
 	font-size:1.5em;
 	font-weight:800;
@@ -25,9 +73,69 @@ body {
 	color:black;
     font-family: 'Martel', serif;
 }
+#title_by_dip{
+    position:absolute;
+	top:40px;
+	width:100%;
+	font-size:1.2em;
+	font-weight:800;
+	text-align:center;
+	color:black;
+    font-family: 'Martel', serif;
+}
+#close_page{
+    position: absolute;
+    top:0;right:0;
+    width:40px;
+    height:40px;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+#info_by_dip{
+    position:absolute;
+	top:120px;
+	width:100%;
+	font-size:1em;
+	font-weight:800;
+	text-align:center;
+	color:black;
+    font-family: 'Martel', serif;
+}
+#output_number_urmet{
+    position:absolute;
+    font-weight: 900;
+	top:280px;
+    left:75px;
+	width:150px;
+    text-align: center;
+	font-size:1em;
+    color:black;
+    font-family: 'Martel', serif;
+ 
+}
+#number_urmet{
+    background-color: white;
+}
+#number_comelit{
+    background-color: white;
+}
+#output_number_comelit{
+    position:absolute;
+    font-weight: 900;
+	top:370px;
+    left:75px;
+	width:150px;
+    text-align: center;
+	font-size:1em;
+    color:black;
+    font-family: 'Martel', serif;
+}
 #urmet{
     position: absolute;
-    top: 110px;
+    top: 150px;
     width:100%;
     text-align: center;
     color:black;
@@ -36,7 +144,7 @@ body {
 }
 #comelit{
     position: absolute;
-    top: 270px;
+    top: 290px;
     width:100%;
     text-align: center;
     color:black;
@@ -46,15 +154,15 @@ body {
 #hr0{
     position: absolute;
     width:100%;
-    top:80px;    
+    top:130px;    
     background-color:white;
-    height: 2px;
+    height: 1px;
     border: 1px solid silver;
 }
 #hr1{
     position: absolute;
     width:100%;
-    top:240px;
+    top:270px;
     background-color:white;
     height: 1px;
     border: 1px solid silver;
@@ -62,28 +170,35 @@ body {
 #hr2{
     position: absolute;
     width:100%;
-    top:400px;
+    top:410px;
     background-color:white;
     height: 1px;
     border: 1px solid silver;
 }
-.box{
+#box{
 	position:absolute;
+	top:180px;
+	left:75px;
+	border:1px solid black;
+	border-radius:5px;
+	background-color:red;
+}
+#box1{
+	position:absolute;
+	top:320px;
+	left:75px;
+	border:1px solid black;
+	border-radius:5px;
+	background-color:red;
+}
+#box_by_dip{
+    position:absolute;
 	top:150px;
-	left:75px;
+	left:32.5px;
 	border:1px solid black;
 	border-radius:5px;
 	background-color:red;
 }
-.box1{
-	position:absolute;
-	top:310px;
-	left:75px;
-	border:1px solid black;
-	border-radius:5px;
-	background-color:red;
-}
-
 .switchs, .nbrswitchs{
 	display:flex;
 	flex-direction:row;
@@ -98,10 +213,35 @@ body {
 	display:flex;
 	justify-content:center;
 }
-
+.switch_by_dip {
+	width:25px;
+	height:55px;
+	margin:1px;
+	border:1px solid black;
+	background-color:white;  
+	display:flex;
+	justify-content:center;
+}
+.btn_by_dip{
+    margin-top:32px;
+	width:20px;
+	height:20px;
+	background-color:black;
+	transition:0.5s;
+}
 .nbrswitch{
 	width:15px;
 	height:15px;
+	margin:1px;
+	border:1px solid transparent;
+	font-size:1em;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.nbrswitch_by_dip{
+    width:25px;
+	height:20px;
 	margin:1px;
 	border:1px solid transparent;
 	font-size:1em;
@@ -128,7 +268,7 @@ body {
     position:absolute;
     width:100%;
     height:30px;
-    top:440px;
+    top:445px;
     left:0;
     display: flex;
     align-items: center;

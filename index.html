@@ -4,105 +4,133 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>DIP Switch</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-        	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        	<link href="https://fonts.googleapis.com/css2?family=Martel:wght@300&display=swap" rel="stylesheet">
-        	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">			
-		<link href="css/dip_switch.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<div id="cont">
-		    	<div id="title">DIP - SWITCH</div>
-            		<hr id="hr_tittle">
-            		<div id="search_by_dip">Search by DIP Position<span id="search">Search<i class="fas fa-search"></i></span></div>
-            		<hr id="hr0">
-            		<span id="urmet">URMET</span>
-			<div id="box">
-				<div style="margin-left:2px">ON</div>
-				<div class="switchs">
-					<div class="switch"><div class="btn"></div></div>
-					<div class="switch"><div class="btn"></div></div>
-					<div class="switch"><div class="btn"></div></div>
-					<div class="switch"><div class="btn"></div></div>
-					<div class="switch"><div class="btn"></div></div>
-					<div class="switch"><div class="btn"></div></div>
-					<div class="switch"><div class="btn"></div></div>
-					<div class="switch"><div class="btn"></div></div>
-				</div>
-				<div class="nbrswitchs">
-					<div class="nbrswitch">1</div>
-					<div class="nbrswitch">2</div>
-					<div class="nbrswitch">3</div>
-					<div class="nbrswitch">4</div>
-					<div class="nbrswitch">5</div>
-					<div class="nbrswitch">6</div>
-					<div class="nbrswitch">7</div>
-					<div class="nbrswitch">8</div>
-				</div>
-			</div>
-            		<hr id="hr1">
-            		<span id="comelit">COMELIT</span>
-			<div id="box1">
-				<div style="margin-left:2px">ON</div>
-				<div class="switchs">
-					<div class="switch"><div class="btn1"></div></div>
-					<div class="switch"><div class="btn1"></div></div>
-					<div class="switch"><div class="btn1"></div></div>
-					<div class="switch"><div class="btn1"></div></div>
-					<div class="switch"><div class="btn1"></div></div>
-					<div class="switch"><div class="btn1"></div></div>
-					<div class="switch"><div class="btn1"></div></div>
-					<div class="switch"><div class="btn1"></div></div>
-				</div>
-				<div class="nbrswitchs">
-					<div class="nbrswitch">1</div>
-					<div class="nbrswitch">2</div>
-					<div class="nbrswitch">3</div>
-					<div class="nbrswitch">4</div>
-					<div class="nbrswitch">5</div>
-					<div class="nbrswitch">6</div>
-					<div class="nbrswitch">7</div>
-					<div class="nbrswitch">8</div>
-				</div>
-			</div>
-            		<hr id="hr2">
-			<div id="cont_input"><input id="input" type="text" placeholder="?"></div>
-		</div>
-        	<div id="container_box_by_dip">
-            		<span id="close_page"><i class="fas fa-times"></i></span>
-            		<div id="title_by_dip">Search by DIP Position</div>
-            		<div id="info_by_dip">Click on DIP</div>
-            		<div id="box_by_dip">
-                		<div style="margin-left:2px">ON</div>
-                		<div class="switchs">
-			    		<div class="switch_by_dip"><div class="btn_by_dip"></div></div>
-			    		<div class="switch_by_dip"><div class="btn_by_dip"></div></div>
-			    		<div class="switch_by_dip"><div class="btn_by_dip"></div></div>
-			   		<div class="switch_by_dip"><div class="btn_by_dip"></div></div>
-			    		<div class="switch_by_dip"><div class="btn_by_dip"></div></div>
-			    		<div class="switch_by_dip"><div class="btn_by_dip"></div></div>
-			    		<div class="switch_by_dip"><div class="btn_by_dip"></div></div>
-			    		<div class="switch_by_dip"><div class="btn_by_dip"></div></div>
-                		</div>
-                		<div class="nbrswitchs">
-                    			<div class="nbrswitch_by_dip">1</div>
-                    			<div class="nbrswitch_by_dip">2</div>
-                    			<div class="nbrswitch_by_dip">3</div>
-                    			<div class="nbrswitch_by_dip">4</div>
-                    			<div class="nbrswitch_by_dip">5</div>
-                    			<div class="nbrswitch_by_dip">6</div>
-                    			<div class="nbrswitch_by_dip">7</div>
-                    			<div class="nbrswitch_by_dip">8</div>
-                		</div>
-            		</div>
-            		<div id="output_number_urmet">Urmet
-                		<div id="number_urmet">0</div>
-           		</div>
-            		<div id="output_number_comelit">Comelit
-                		<div id="number_comelit">0</div>
-            		</div>
-        	</div>        
-		<script src="js/dip_switch.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
+<canvas id="cnv"></canvas>
+<div id="search_by_dip">
+    Rechercher par position
+    <div><span id="search">Recherche<i class="fa-solid fa-magnifying-glass"></i></span></div>
+</div>
+<div id="cont">
+    
+    <span id="comelit">COMELIT</span>
+    <div id="box_comelit">
+        <div class="on">ON</div>
+        <div class="switchs">
+            <div class="switch"><div class="btn1"></div></div>
+            <div class="switch"><div class="btn1"></div></div>
+            <div class="switch"><div class="btn1"></div></div>
+            <div class="switch"><div class="btn1"></div></div>
+            <div class="switch"><div class="btn1"></div></div>
+            <div class="switch"><div class="btn1"></div></div>
+            <div class="switch"><div class="btn1"></div></div>
+            <div class="switch"><div class="btn1"></div></div>
+        </div>
+        <div class="nbrswitchs">
+            <div class="nbrswitch">1</div>
+            <div class="nbrswitch">2</div>
+            <div class="nbrswitch">3</div>
+            <div class="nbrswitch">4</div>
+            <div class="nbrswitch">5</div>
+            <div class="nbrswitch">6</div>
+            <div class="nbrswitch">7</div>
+            <div class="nbrswitch">8</div>
+        </div>
+    </div>
+    <div id="switch_on_comelit">
+        <div id="outSwitch_comelit" ></div>
+    </div>
+
+    <span id="urmet">Autre marque</span>
+    <div id="box_urmet">
+        <div class="on">ON</div>
+        <div class="switchs">
+            <div class="switch"><div class="btn"></div></div>
+            <div class="switch"><div class="btn"></div></div>
+            <div class="switch"><div class="btn"></div></div>
+            <div class="switch"><div class="btn"></div></div>
+            <div class="switch"><div class="btn"></div></div>
+            <div class="switch"><div class="btn"></div></div>
+            <div class="switch"><div class="btn"></div></div>
+            <div class="switch"><div class="btn"></div></div>
+        </div>
+        <div class="nbrswitchs">
+            <div class="nbrswitch">1</div>
+            <div class="nbrswitch">2</div>
+            <div class="nbrswitch">3</div>
+            <div class="nbrswitch">4</div>
+            <div class="nbrswitch">5</div>
+            <div class="nbrswitch">6</div>
+            <div class="nbrswitch">7</div>
+            <div class="nbrswitch">8</div>
+        </div>
+    </div>
+
+    <div id="switch_on_urmet">
+        <div id="outSwitch_urmet" ></div>
+    </div>
+   
+</div>
+<div id="container_box_by_dip">
+    <span id="close_page"><i class="fas fa-times"></i></span>
+    <div id="title_by_dip">Rechercher par position</div>
+    <div id="info_by_dip">Cliquer sur les switchs</div>
+    <div id="box_by_dip">
+        <div class="on">ON</div>
+        <div class="switchs">
+            <div class="switch_by_dip"><div class="btn_by_dip"></div></div>
+            <div class="switch_by_dip"><div class="btn_by_dip"></div></div>
+            <div class="switch_by_dip"><div class="btn_by_dip"></div></div>
+            <div class="switch_by_dip"><div class="btn_by_dip"></div></div>
+            <div class="switch_by_dip"><div class="btn_by_dip"></div></div>
+            <div class="switch_by_dip"><div class="btn_by_dip"></div></div>
+            <div class="switch_by_dip"><div class="btn_by_dip"></div></div>
+            <div class="switch_by_dip"><div class="btn_by_dip"></div></div>
+        </div>
+        <div class="nbrswitchs">
+            <div class="nbrswitch_by_dip">1</div>
+            <div class="nbrswitch_by_dip">2</div>
+            <div class="nbrswitch_by_dip">3</div>
+            <div class="nbrswitch_by_dip">4</div>
+            <div class="nbrswitch_by_dip">5</div>
+            <div class="nbrswitch_by_dip">6</div>
+            <div class="nbrswitch_by_dip">7</div>
+            <div class="nbrswitch_by_dip">8</div>
+        </div>
+    </div>
+     <div id="output_number_comelit">COMELIT
+        <div id="number_comelit">?</div>
+    </div>
+    <div id="output_number_urmet">Autre marque
+        <div id="number_urmet">?</div>
+    </div>
+   
+</div>
+
+ <div id="clavier">
+        <div class="row_num">
+            <div class="num">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+        </div>
+        <div class="row_num">
+            <div class="num">4</div>
+            <div class="num">5</div>
+            <div class="num">6</div>
+        </div>
+        <div class="row_num">
+            <div class="num">7</div>
+            <div class="num">8</div>
+            <div class="num">9</div>
+        </div>
+        <div class="row_num">
+            <div  id="outputNum">-</div>
+            <div class="num">0</div>
+            <div class="num" id="delNum"><i class="fa-solid fa-arrow-left"></i></div>
+        </div>
+    </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
 	</body>
 </html>

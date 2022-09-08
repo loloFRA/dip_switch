@@ -92,7 +92,7 @@ const searchOn = () => {
 const searchOff = () => {
     cont.style.display='block'
     clavier.style.display='block'
-    search_by_dip.style.display='block'
+    search_by_dip.style.display='flex'
     container_box_by_dip.style.display='none'
     reInitCanvas(200)
 

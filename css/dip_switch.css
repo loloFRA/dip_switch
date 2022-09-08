@@ -1,18 +1,18 @@
 body {
 	background-color:black;
 	margin:0;padding:0;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-    font-family: Arial, Helvetica, sans-serif;   
+    	-webkit-user-select: none; /* Safari */
+    	-ms-user-select: none; /* IE 10 and IE 11 */
+    	user-select: none; /* Standard syntax */
+    	font-family: Arial, Helvetica, sans-serif;   
 }
 
 canvas {
 	position:absolute;
 	z-index:1;
-    top:0;right:0;
-    background-color: black;
-    background: linear-gradient( black, rgb(22, 22, 22),rgb(58, 58, 58) );
+    	top:0;right:0;
+    	background-color: black;
+    	background: linear-gradient( black, rgb(22, 22, 22),rgb(58, 58, 58) );
 }
 
 #cont{
@@ -141,7 +141,7 @@ canvas {
 }
 #urmet{
     	position: absolute;
-    	top: 150px;
+    	top: 170px;
    	    width:100%;
     	text-align: center;
     	color:white;
@@ -179,7 +179,7 @@ canvas {
 }
 #switch_on_urmet{
     position: absolute;
-   	top: 257px;
+   	top: 277px;
     width:100%;
     text-align: center;
     display: flex;
@@ -202,7 +202,7 @@ canvas {
 }
 #box_urmet{
 	position:absolute;
-	top:175px;
+	top:195px;
 	left:72px;
     border-radius:4px;
     background: linear-gradient(#F10000, #D60303, #800202);

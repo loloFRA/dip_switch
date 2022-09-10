@@ -21,9 +21,6 @@ const findNumber = () => {
     number_comelit.innerHTML = numberComelit
 }
 
-
-
-
 const findByDip = () => {
     $(".switch_by_dip").each(function(index, elm){
         $(this).val('0')
@@ -95,7 +92,6 @@ const searchOff = () => {
     search_by_dip.style.display='flex'
     container_box_by_dip.style.display='none'
     reInitCanvas(200)
-
 }
 
 const getNum = () => {
@@ -150,7 +146,6 @@ const showDipNum = () =>{
     $(".btn1").each(function(index){
 		intToBinary(inputNum).split('').reverse().join('')[index]=="0"?$(this).css('margin-top',21):$(this).css('margin-top',3);
 	});
-
 }
 
 const addNewNum =(num) => {
@@ -178,6 +173,8 @@ const reInitCanvas = (newHeight) => {
 }
 
 const init = () => {
+    var lockOrientation = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
+    if(lockOrientation)lockOrientation("landscape-primary");
     getNum()
     document.getElement
     findByDip()
@@ -188,8 +185,7 @@ const init = () => {
     c.width = W = window.innerWidth;
     c.height = H = window.innerHeight-200;
     ctx = c.getContext("2d");
-	for(let i=0;i<50;i++) dots.push(new Dot())
-    
+    for(let i=0;i<50;i++) dots.push(new Dot())  
     requestAnimationFrame(animate);
 };
 

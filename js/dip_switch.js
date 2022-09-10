@@ -173,6 +173,22 @@ const reInitCanvas = (newHeight) => {
 }
 
 const init = () => {
+	  var devWidth, devHeight;
+  window.addEventListener('load', function() {
+    devWidth  = screen.width;
+    devHeight = screen.height;
+  });
+  window.addEventListener('orientationchange', function () {
+    if (devWidth < 768 && (window.orientation === 90 || window.orientation == -90)) {
+      document.body.style.width = devWidth + 'px';
+      document.body.style.height = devHeight + 'px';
+      document.body.style.transform = 'rotate(90deg)';
+      document.body.style.transformOrigin = ''+(devHeight/2)+'px '+(devHeight/2)+'px';
+    } else {
+      document.body.removeAttribute('style');
+    }
+  }, true);
+
     getNum()
     document.getElement
     findByDip()

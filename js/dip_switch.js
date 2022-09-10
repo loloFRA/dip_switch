@@ -173,8 +173,6 @@ const reInitCanvas = (newHeight) => {
 }
 
 const init = () => {
-    var lockOrientation = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
-    if(lockOrientation)lockOrientation("landscape-primary");
     getNum()
     document.getElement
     findByDip()

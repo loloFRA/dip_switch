@@ -182,8 +182,10 @@ const resize = () =>{
 }
 
 const evenRotation = () => {
-	c.width = W = window.innerWidth;
-    	c.height = H = window.innerHeight-delLastHeight;
+	if(innerWidth<innerHeight){
+		c.width = W = window.innerWidth;
+    		c.height = H = window.innerHeight-delLastHeight;
+	}
 	reInitCanvas()
 }
 
@@ -203,9 +205,9 @@ const init = () => {
     window.addEventListener(orientationEvent, function(){ 
 	    alert(innerHeight)
 	   setTimeout(function(){
-		   alert(innerHeight)
-	   },1000)
-	    evenRotation()
+		   evenRotation()
+	   },100)
+	    
     }, false);
     requestAnimationFrame(animate);
 };

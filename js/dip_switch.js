@@ -172,6 +172,7 @@ const delLastNum = () => {
 
 const reInitCanvas = () => {
     dots = []
+    c.width = W = window.innerWidth;
     c.height = H = window.innerHeight-delLastHeight;
     for(let i=0;i<50;i++) dots.push(new Dot())
 }

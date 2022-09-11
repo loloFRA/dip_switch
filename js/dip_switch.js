@@ -202,6 +202,9 @@ const init = () => {
     for(let i=0;i<50;i++) dots.push(new Dot())     
     window.addEventListener(orientationEvent, function(){ 
 	    alert(innerHeight)
+	   setTimeout(function(){
+		   alert(innerHeight)
+	   },1000)
 	    evenRotation()
     }, false);
     requestAnimationFrame(animate);

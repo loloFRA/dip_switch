@@ -200,7 +200,8 @@ const init = () => {
     if(innerHeight<600&&innerWidth<innerHeight)resize()
     ctx = c.getContext("2d");
     for(let i=0;i<50;i++) dots.push(new Dot())     
-    window.addEventListener(orientationEvent, function(){
+    window.addEventListener(orientationEvent, function(){ 
+	    alert(innerHeight)
 	    evenRotation()
     }, false);
     requestAnimationFrame(animate);

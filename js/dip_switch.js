@@ -181,6 +181,10 @@ const resize = () =>{
     cont.style.transform = "scale(0.7)"
 }
 
+const evenRotation = () => {
+	
+	reInitCanvas()
+}
 const init = () => {
     getNum()
     findByDip()
@@ -191,10 +195,12 @@ const init = () => {
     c.width = W = window.innerWidth;
     c.height = H = window.innerHeight-delLastHeight;
     c.style.display = "block"
-    if(innerHeight<600)resize()
+    if(innerHeight<600&&innerWidth<innerHeight)resize()
     ctx = c.getContext("2d");
     for(let i=0;i<50;i++) dots.push(new Dot())     
-    window.addEventListener(orientationEvent, reInitCanvas, false);
+    window.addEventListener(orientationEvent, function(){
+	    evenRotation()
+    }, false);
     requestAnimationFrame(animate);
 };
 

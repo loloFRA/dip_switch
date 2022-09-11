@@ -177,7 +177,7 @@ const resize = () =>{
     search_by_dip.style.transform = "scale(0.7)"
     cont.style.transform = "scale(0.7)"
 }
-
+var supportsOrientationChange, orientationEvent
 const init = () => {
     getNum()
     document.getElement
@@ -191,6 +191,12 @@ const init = () => {
     if(innerHeight<600)resize()
     ctx = c.getContext("2d");
     for(let i=0;i<50;i++) dots.push(new Dot())  
+    supportsOrientationChange = "onorientationchange" in window,
+    orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+
+window.addEventListener(orientationEvent, function() {
+    alert('HOLY ROTATING SCREENS BATMAN:' + window.orientation + " " + screen.width);
+}, false);
     requestAnimationFrame(animate);
 };
 

@@ -181,16 +181,7 @@ const resize = () =>{
     cont.style.transform = "scale(0.7)"
 }
 
-const eventResize = () => { 
-    window.addEventListener(orientationEvent, function() {
-       reInitCanvas()
-       if(innerHeight<600)resize()
-    }, false);
-}
-
-
 const init = () => {
-    eventResize()
     getNum()
     findByDip()
     search_by_dip.addEventListener("click", searchOn)
@@ -203,6 +194,7 @@ const init = () => {
     if(innerHeight<600)resize()
     ctx = c.getContext("2d");
     for(let i=0;i<50;i++) dots.push(new Dot())     
+    window.addEventListener(orientationEvent, reInitCanvas, false);
     requestAnimationFrame(animate);
 };
 

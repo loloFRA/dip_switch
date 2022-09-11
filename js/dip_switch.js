@@ -172,6 +172,12 @@ const reInitCanvas = (newHeight) => {
     for(let i=0;i<50;i++) dots.push(new Dot())
 }
 
+const resize = () =>{
+    search_by_dip.style.fontSize = "0.8em"
+    search_by_dip.style.transform = "scale(0.7)"
+    cont.style.transform = "scale(0.7)"
+}
+
 const init = () => {
     getNum()
     document.getElement
@@ -182,6 +188,7 @@ const init = () => {
     c = document.getElementById("cnv");
     c.width = W = window.innerWidth;
     c.height = H = window.innerHeight-200;
+    if(innerHeight<600)resize()
     ctx = c.getContext("2d");
     for(let i=0;i<50;i++) dots.push(new Dot())  
     requestAnimationFrame(animate);

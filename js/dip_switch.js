@@ -1,7 +1,9 @@
 let inputNum = ''
 const MAX_INPUT = 255;
 let dots = []
-let c, ctx, W, H
+let c, ctx, W, H, delLastHeight = -200
+let supportsOrientationChange = "onorientationchange" in window,
+    orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
 
 const random = (max=1, min=0) => Math.random() * (max - min) + min;
 
@@ -83,7 +85,8 @@ const searchOn = () => {
     clavier.style.display='none'
     search_by_dip.style.display='none'
     container_box_by_dip.style.display='block'
-    reInitCanvas(0)
+    delLastHeight = 0
+    reInitCanvas()
 }
 
 const searchOff = () => {
@@ -91,7 +94,8 @@ const searchOff = () => {
     clavier.style.display='block'
     search_by_dip.style.display='flex'
     container_box_by_dip.style.display='none'
-    reInitCanvas(200)
+    delLastHeight = 200
+    reInitCanvas()
 }
 
 const getNum = () => {
@@ -166,9 +170,9 @@ const delLastNum = () => {
     findDipOn()
 }
 
-const reInitCanvas = (newHeight) => {
+const reInitCanvas = () => {
     dots = []
-    c.height = H = window.innerHeight-newHeight;
+    c.height = H = window.innerHeight-delLastHeight;
     for(let i=0;i<50;i++) dots.push(new Dot())
 }
 
@@ -177,26 +181,28 @@ const resize = () =>{
     search_by_dip.style.transform = "scale(0.7)"
     cont.style.transform = "scale(0.7)"
 }
-var supportsOrientationChange, orientationEvent
+
+const eventResize = () => {
+   reInitCanvas()
+    window.addEventListener(orientationEvent, function() {
+       if(innerHeight<600)resize()
+    }, false);
+}
+
+
 const init = () => {
+    eventResize()
     getNum()
-    document.getElement
     findByDip()
     search_by_dip.addEventListener("click", searchOn)
     close_page.addEventListener("click", searchOff)
     delNum.addEventListener("click", delLastNum)
     c = document.getElementById("cnv");
     c.width = W = window.innerWidth;
-    c.height = H = window.innerHeight-200;
+    c.height = H = window.innerHeight-delLastHeight;
     if(innerHeight<600)resize()
     ctx = c.getContext("2d");
-    for(let i=0;i<50;i++) dots.push(new Dot())  
-    supportsOrientationChange = "onorientationchange" in window,
-    orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
-
-window.addEventListener(orientationEvent, function() {
-    alert('HOLY ROTATING SCREENS BATMAN:' + window.orientation + " " + screen.width);
-}, false);
+    for(let i=0;i<50;i++) dots.push(new Dot())     
     requestAnimationFrame(animate);
 };
 

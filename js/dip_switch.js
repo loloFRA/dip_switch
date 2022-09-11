@@ -182,9 +182,9 @@ const resize = () =>{
     cont.style.transform = "scale(0.7)"
 }
 
-const eventResize = () => {
-   reInitCanvas()
+const eventResize = () => { 
     window.addEventListener(orientationEvent, function() {
+       reInitCanvas()
        if(innerHeight<600)resize()
     }, false);
 }

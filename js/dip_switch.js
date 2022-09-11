@@ -203,11 +203,7 @@ const init = () => {
     ctx = c.getContext("2d");
     for(let i=0;i<50;i++) dots.push(new Dot())     
     window.addEventListener(orientationEvent, function(){ 
-	    alert(innerHeight)
-	   setTimeout(function(){
-		   evenRotation()
-	   },100)
-	    
+	   setTimeout(evenRotation,100)	    
     }, false);
     requestAnimationFrame(animate);
 };

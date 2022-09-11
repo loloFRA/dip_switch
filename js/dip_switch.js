@@ -200,6 +200,7 @@ const init = () => {
     c = document.getElementById("cnv");
     c.width = W = window.innerWidth;
     c.height = H = window.innerHeight-delLastHeight;
+    c.style.display = "block"
     if(innerHeight<600)resize()
     ctx = c.getContext("2d");
     for(let i=0;i<50;i++) dots.push(new Dot())     

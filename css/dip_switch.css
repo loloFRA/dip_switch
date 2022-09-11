@@ -13,6 +13,7 @@ canvas {
     	top:0;right:0;
     	background-color: black;
     	background: linear-gradient( black, rgb(22, 22, 22),rgb(58, 58, 58) );
+	display = "none";
 }
 
 #cont{

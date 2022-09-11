@@ -1,7 +1,7 @@
 let inputNum = ''
 const MAX_INPUT = 255;
 let dots = []
-let c, ctx, W, H, delLastHeight = -200
+let c, ctx, W, H, delLastHeight = 200
 let supportsOrientationChange = "onorientationchange" in window,
     orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
 

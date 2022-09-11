@@ -185,6 +185,7 @@ const evenRotation = () => {
 	if(innerWidth<innerHeight){
 		c.width = W = window.innerWidth;
     		c.height = H = window.innerHeight-delLastHeight;
+		alert("e"+H)
 	}
 	reInitCanvas()
 }

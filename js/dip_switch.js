@@ -179,7 +179,7 @@ const reInitCanvas = () => {
 
 const resize = () =>{
     search_by_dip.style.fontSize = "0.8em"
-    cont.style.transform = "scale(0.85)"
+    cont.style.transform = "scale(0.9)"
 }
 
 const evenRotation = () => {
@@ -201,7 +201,7 @@ const init = () => {
     c.width = W = window.innerWidth;
     c.height = H = window.innerHeight-delLastHeight;
     c.style.display = "block"
-    if(innerHeight<570&&innerWidth<innerHeight)resize()
+    if(innerHeight<560&&innerWidth<innerHeight)resize()
     ctx = c.getContext("2d");
     for(let i=0;i<50;i++) dots.push(new Dot())     
     window.addEventListener(orientationEvent, function(){ 

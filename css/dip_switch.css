@@ -6,7 +6,6 @@ body {
     	user-select: none; /* Standard syntax */
     	font-family: Arial, Helvetica, sans-serif;   
 }
-
 canvas {
 	position:absolute;
 	z-index:1;
@@ -15,7 +14,6 @@ canvas {
     	background: linear-gradient( black, rgb(22, 22, 22),rgb(58, 58, 58) );
 	display: none;
 }
-
 #cont{
 	position:absolute;
 	margin:auto;
@@ -27,7 +25,6 @@ canvas {
 	color:white;
    	z-index:2;
 }
-
 #search_by_dip{
     	position:absolute;
     	width: 100%;
@@ -106,14 +103,14 @@ canvas {
 #output_number_urmet{
     	position:absolute;
     	font-weight: 800;
-	    top:410px;
+	top:410px;
     	left:75px;
-	    width:150px;
+	width:150px;
     	text-align: center;
-	    font-size:1.2em;
+	font-size:1.2em;
     	color:white;
     	font-family: Arial, Helvetica, sans-serif;
-
+	letter-spacing: 3px;
 }
 #number_urmet{
     	background-color: white;
@@ -163,7 +160,7 @@ canvas {
 }
 #switch_on_comelit{
     position: absolute;
-   	top: 107px;
+    top: 107px;
     width:100%;
     text-align: center;
     display: flex;
@@ -172,7 +169,7 @@ canvas {
 #outSwitch_comelit{
     background-color: white;
     color: black;
-     border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
     padding-left: 5px;
     padding-right: 5px;
     font-size: 0.9em;
@@ -195,7 +192,6 @@ canvas {
     font-size: 0.9em;
     font-weight: bold;
 }
-
 .on{
     margin-left:2px;
     font-size:0.8em;
@@ -205,10 +201,10 @@ canvas {
 	position:absolute;
 	top:195px;
 	left:72px;
-   	 border-radius:4px;
-   	 background: linear-gradient(#F10000, #D60303, #800202);
-  	  box-shadow:inset 0.5px 1px 5px white, inset -0.5px -1px 5px black;
-  	  padding:2px;
+   	border-radius:4px;
+   	background: linear-gradient(#F10000, #D60303, #800202);
+  	box-shadow:inset 0.5px 1px 5px white, inset -0.5px -1px 5px black;
+  	padding:2px;
 }
 #box_comelit{
 	position:absolute;
@@ -223,17 +219,16 @@ canvas {
     	position:absolute;
 	top:160px;
 	left:32.5px;
-   	 border-radius:4px;
-  	  background: linear-gradient(#F10000, #D60303, #800202);
-  	  box-shadow:inset 0.5px 1px 5px white, inset -0.5px -1px 5px black;
-  	  padding:4px;
- 	   font-size:1.4em;
+   	border-radius:4px;
+  	background: linear-gradient(#F10000, #D60303, #800202);
+  	box-shadow:inset 0.5px 1px 5px white, inset -0.5px -1px 5px black;
+  	padding:4px;
+ 	font-size:1.4em;
 }
 .switchs, .nbrswitchs{
 	display:flex;
 	flex-direction:row;
 }
-
 .switch {
 	width:15px;
 	height:35px;
@@ -309,14 +304,11 @@ canvas {
     bottom: 0;
     left: 0;
     color: white;
-    z-index:2;
-    
+    z-index:2;  
 }
 .row_num{
     display: flex;
-    flex-direction: row;
-     
-    
+    flex-direction: row;   
 }
 .num{
     width:50px;
@@ -328,8 +320,8 @@ canvas {
     align-items: center;
     background-color: rgb(95, 93, 93);
     flex: 1;
-   font-family: Arial, Helvetica, sans-serif;
-  -webkit-box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   -webkit-box-sizing: border-box;
     box-sizing: border-box;
     box-shadow: inset -1px -1px 5px black;
     transition:0.1s
